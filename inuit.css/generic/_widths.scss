@@ -101,8 +101,6 @@
 
 @include grid-setup();
 
-
-
 /**
  * If you have set `$responsive` to ‘true’ in `_vars.scss` then you now have
  * access to these classes. You can define at which breakpoint you’d like an
@@ -118,37 +116,13 @@
  *
  */
 
-@if $responsive == true{
-
-@include media-query(palm){
-    @include grid-setup("palm-");
-}
-
-@include media-query(lap){
-    @include grid-setup("lap-");
-}
-
-@include media-query(portable){
-    @include grid-setup("portable-");
-}
-
-@include media-query(desk){
-    @include grid-setup("desk-");
-}
-
-
-/**
- * If you have set the additional `$responsive-extra` variable to ‘true’ in
- * `_vars.scss` then you now have access to the following class available to
- * accomodate much larger screen resolutions.
- */
-
-@if $responsive-extra == true{
-
-@include media-query(desk-wide){
-    @include grid-setup("deskwide-");
-}
-
-}
+@if $responsive == true {
+    
+    @include media-query(30em){@include grid-setup("b30-");}
+    @include media-query(40em){@include grid-setup("b40-");}
+    @include media-query(50em){@include grid-setup("b50-");}
+    @include media-query(60em){@include grid-setup("b60-");}
+    @include media-query(70em){@include grid-setup("b70-");}
+    @include media-query(80em){@include grid-setup("b80-");}
 
 } /* endif */

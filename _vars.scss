@@ -63,9 +63,9 @@ $responsive-pull:   false!default;
 /**
  * Tell inuit.css when breakpoints start.
  */
-$lap-start:         481px!default;
-$desk-start:        1024px!default;
-$desk-wide-start: 	1200px!default;
+$lap-start:         48em!default;   /* 768/16 = 48  */
+$desk-start:        64em!default;   /* 1024/16 = 64  */
+$desk-wide-start: 	75em!default;   /* 1200/16 = 75  */
 
 
 /**
