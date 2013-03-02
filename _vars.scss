@@ -119,6 +119,6 @@ $brand-face:        "Helvetica Neue", sans-serif!default;
  *
  * Assign our `$base-line-height` to a new spacing var for more transparency.
  */
-$base-spacing-unit: $base-line-height!default;
+$base-spacing-unit: $base-font-size!default;
 $half-spacing-unit: $base-spacing-unit / 2!default;
 $line-height-ratio: $base-line-height / $base-font-size;
